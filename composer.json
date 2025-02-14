@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/oauth2-token-rotator",
+    "description": "Cryptographically secure OAuth2 and OIDC token exchange server enforcing automated single-use refresh token rotation and replay detection.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\TokenRotator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\TokenRotator\\PackageServiceProvider"
+            ]
+        }
+    }
+}
